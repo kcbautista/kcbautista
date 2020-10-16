@@ -1,0 +1,30 @@
+/* global setting */
+* {
+  box-sizing: border-box;
+}
+section {
+  max-width: 1190px;
+  margin: 20px auto;
+}
+/* target box container */
+.box {
+  float: left;
+  width: 48%;
+  background: #f4f4f3;
+  border: 1px solid #c4f2f1;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style: none;
+}
+ul li {
+  display: inline-block;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+}
