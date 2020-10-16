@@ -3,99 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
-    <!-- <link rel="stylesheet" href="./css/all.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="./css/custom.css">
-    <title>Column Layout</title>
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .features{
+            max-width: 1190px;
+
+        }
+     
+        .box {
+            float: left;
+            width: 33.3%;
+            padding: 50px;
+            text-align:center;
+        }
+
+        .box i {
+            margin-bottom: 10px;
+        }   
+        .clr{
+            clear:both;
+        }
+        
+/* Footer */
+#main-footer {
+  text-align: center;
+  background: #444;
+  color: #fff;
+  padding: 20px;
+}
+    </style>
 </head>
 <body>
-    <section>
-        <div class="box">
-            <i class="fas fa-hotel fa-3x"></i>
-            <h3>Great Location</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
+    <section id="features">
+        <div class="box bg-light">
+          <i class="fas fa-hotel fa-3x" data-aos="flip-left"></i>
+          <h3 data-aos="zoom-out-up">Great Location</h3>
+          <p data-aos="fade-up">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, omnis?</p>
         </div>
-        <div class="box">
-            <i class="fas fa-utensils fa-3x"></i>
-            <img src="https://live.staticflickr.com/4561/38054606355_26429c884f_b.jpg" alt="">
-            <h3>Free Meals</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
+        <div class="box bg-primary">
+            <i class="fas fa-utensils fa-3x" data-aos="flip-up"></i>
+            <h3 data-aos="fade-down">Free Meals</h3>
+            <p data-aos="fade-right">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, omnis?</p>
         </div>
-       
-    </section>
-    <section>
-        <div class="box">
-            <i class="fas fa-hotel fa-3x"></i>
-            <h3>Great Job</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
+        <div class="box bg-light">
+            <i class="fas fa-dumbbell fa-3x" data-aos="zoom-out-up"></i>
+            <h3 data-aos="zoom-in-down">Fitness Room</h3>
+            <p data-aos="zoom-in-right">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, omnis?</p>
         </div>
-        <div class="box">
-            <i class="fas fa-utensils fa-3x"></i>
-            <h3>Free Meals</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-       
-    </section>
-    <section>
-        <div class="box">
-            <i class="fas fa-hotel fa-3x"></i>
-            <h3>Great Location</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <img src="https://live.staticflickr.com/4561/38054606355_26429c884f_b.jpg"  data-aos="fade-down-right" alt="">
-          
-        </div>
-        <div class="box">
-            <i class="fas fa-utensils fa-3x"></i>
-            <h3>Free Meals</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-       
-    </section>
-    <section>
-        <div class="box">
-            <i class="fas fa-hotel fa-3x"></i>
-            <h3>Great Location</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div class="box">
-            <i class="fas fa-utensils fa-3x"></i>
-            <h3>Free Meals</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-       
-    </section>
-    <section>
-        <div class="box">
-            <i class="fas fa-hotel fa-3x" data-aos="fade-up"></i>
-            <h3>Great Location</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div class="box">
-            <i class="fas fa-utensils fa-3x" data-aos="fade-down"></i>
-            <h3>Free Meals</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-       
-    </section><section>
-        <div class="box">
-            <i class="fas fa-hotel fa-3x" data-aos="fade-up-right"></i>
-            <h3>Great Location</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div class="box">
-            <i class="fas fa-utensils fa-3x"></i>
-            <h3>Free Meals</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-       
-    </section>
-    <script src="https://unpkg.com/aos@next/dist/aos.js" ></script>
-    <script>
-      AOS.init({
-          offset:400,
-          duration:1000
-      });
-    </script> 
+      </section>
+    
+      <div class="clr"></div>
+    
+      <footer id="main-footer">
+        <p>Chester &copy; Three columns</p>
+      </footer>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({
+            offset:400,
+            duration:1000
+        });
+      </script>
 </body>
 </html>
